@@ -1,0 +1,524 @@
+fileFormatVersion: 2
+guid: 4456fbb1721b0be49a79b297a44fc59f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5610598745592321194
+    second: grass_decor_0
+  - first:
+      213: -1915115452586208508
+    second: grass_decor_1
+  - first:
+      213: 6627177950188020515
+    second: grass_decor_2
+  - first:
+      213: 3373761545559596879
+    second: grass_decor_3
+  - first:
+      213: -3138337482820974055
+    second: grass_decor_4
+  - first:
+      213: -3182906205259256820
+    second: grass_decor_5
+  - first:
+      213: 7311945338940756875
+    second: grass_decor_6
+  - first:
+      213: 8355367833815950787
+    second: grass_decor_7
+  - first:
+      213: 5080363397514783717
+    second: grass_decor_8
+  - first:
+      213: 3967094820750100701
+    second: grass_decor_9
+  - first:
+      213: -4828666168574894858
+    second: grass_decor_10
+  - first:
+      213: -7091525202873446493
+    second: grass_decor_11
+  - first:
+      213: -1861847825234133737
+    second: grass_decor_12
+  - first:
+      213: -1013496261973988079
+    second: grass_decor_13
+  - first:
+      213: -7118541185092711115
+    second: grass_decor_14
+  - first:
+      213: -8424756648795805885
+    second: grass_decor_15
+  - first:
+      213: 8480531591949703358
+    second: grass_decor_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grass_decor_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 166
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ba7b7ca262322b0800000000000000
+      internalID: -5610598745592321194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 166
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403dcb084a42c65e0800000000000000
+      internalID: -1915115452586208508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 166
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3232240cb3778fb50800000000000000
+      internalID: 6627177950188020515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 133
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fd3ff204202de20800000000000000
+      internalID: 3373761545559596879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 133
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a892fdfa26274d0800000000000000
+      internalID: -3138337482820974055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 133
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ca22a8bab04d3d0800000000000000
+      internalID: -3182906205259256820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 100
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8313a0ab8f397560800000000000000
+      internalID: 7311945338940756875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_7
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 100
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c52356b6ca34f370800000000000000
+      internalID: 8355367833815950787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_8
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 100
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebe3c6d793118640800000000000000
+      internalID: 5080363397514783717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 67
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd80a1d88b3fd0730800000000000000
+      internalID: 3967094820750100701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 67
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc952bf3b12dfcb0800000000000000
+      internalID: -4828666168574894858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_11
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 67
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af8ff68667d59d90800000000000000
+      internalID: -7091525202873446493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 34
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71df51774436926e0800000000000000
+      internalID: -1861847825234133737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_13
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 34
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11daadbf4865fe1f0800000000000000
+      internalID: -1013496261973988079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_14
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 34
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d8f8ff18cd53d90800000000000000
+      internalID: -7118541185092711115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_15
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3476a65d670451b80800000000000000
+      internalID: -8424756648795805885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_decor_16
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1
+        width: 31.333334
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8d3a41d86e0b570800000000000000
+      internalID: 8480531591949703358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

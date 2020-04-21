@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GrassDecor
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 32
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+    totalSpriteSurfaceArea: 16864
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 8480531591949703358, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: -8424756648795805885, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: -7118541185092711115, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: -1013496261973988079, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: -1861847825234133737, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: -7091525202873446493, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: -4828666168574894858, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: -3138337482820974055, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: -3182906205259256820, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: 7311945338940756875, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: 8355367833815950787, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: -5610598745592321194, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: -1915115452586208508, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: 6627177950188020515, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: 3373761545559596879, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: 5080363397514783717, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  - {fileID: 3967094820750100701, guid: 4456fbb1721b0be49a79b297a44fc59f, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - grass_decor_16
+  - grass_decor_15
+  - grass_decor_14
+  - grass_decor_13
+  - grass_decor_12
+  - grass_decor_11
+  - grass_decor_10
+  - grass_decor_4
+  - grass_decor_5
+  - grass_decor_6
+  - grass_decor_7
+  - grass_decor_0
+  - grass_decor_1
+  - grass_decor_2
+  - grass_decor_3
+  - grass_decor_8
+  - grass_decor_9
+  m_Tag: GrassDecor
+  m_IsVariant: 0

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SandClockAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 3ed1266a106233549824984e084adbd3, type: 3}
+    totalSpriteSurfaceArea: 2160
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -4828082918237041143, guid: 3ed1266a106233549824984e084adbd3, type: 3}
+  - {fileID: 8357072656197393001, guid: 3ed1266a106233549824984e084adbd3, type: 3}
+  - {fileID: 3137200372549093957, guid: 3ed1266a106233549824984e084adbd3, type: 3}
+  - {fileID: 5417758922446889769, guid: 3ed1266a106233549824984e084adbd3, type: 3}
+  - {fileID: 4650308047911552914, guid: 3ed1266a106233549824984e084adbd3, type: 3}
+  - {fileID: 5261826870650516143, guid: 3ed1266a106233549824984e084adbd3, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - sand_clock_set_4
+  - sand_clock_set_5
+  - sand_clock_set_2
+  - sand_clock_set_3
+  - sand_clock_set_0
+  - sand_clock_set_1
+  m_Tag: SandClockAtlas
+  m_IsVariant: 0
