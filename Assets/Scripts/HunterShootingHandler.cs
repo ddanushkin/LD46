@@ -38,8 +38,9 @@ public class HunterShootingHandler : MonoBehaviour
     
     void Update()
     {
-        float distanceToTarget = Vector3.Distance(_target.position, transform.position);
-
+        if (!GameManager.Instance.hunterSpawnerEnabled)
+            return;
+        float distanceToTarget = Vector2.Distance(_target.position, transform.position);
         if (distanceToTarget <= distance)
         {
             if (_shotTimer > 0.0f)
@@ -68,7 +69,8 @@ public class HunterShootingHandler : MonoBehaviour
 
         if (_canShoot)
         {
-            GameObject bullet = Instantiate(bulletPrefab, bulletPlaceHolder.position, bulletPlaceHolder.rotation);
+            Vector2 bulletPosition = bulletPlaceHolder.position;
+            GameObject bullet = Instantiate(bulletPrefab, bulletPosition, bulletPlaceHolder.rotation);
             BulletController bc = bullet.GetComponent<BulletController>();
             bc.speed = bulletSpeed;
             bc.target = _target;

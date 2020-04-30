@@ -46,7 +46,7 @@ public class GrassDecor : MonoBehaviour
         
         Sprite newSprite = _sprites[Random.Range(0, _sprites.Length)];
         GameObject newDec = Instantiate(decorElem, 
-                    new Vector3(Random.Range(_minX, _maxX), _startY, 0), decorElem.transform.rotation);
+                    new Vector3(Random.Range(-4, 4), _startY, 0), decorElem.transform.rotation);
         newDec.GetComponent<SpriteRenderer>().sprite = newSprite;
     }
 }

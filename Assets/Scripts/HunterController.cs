@@ -20,7 +20,6 @@ public class HunterController : MonoBehaviour
 	private float _escapeSpeed = 5f;
 	public bool isLeft;
 
-	
 	private void Start()
 	{
 		_isDieing = false;
@@ -42,6 +41,7 @@ public class HunterController : MonoBehaviour
 			{
 				SoundManager.PlaySound(escapeAudioClip, true, 0.9f, 1.2f);
 				UIController.Instance.ChangeHatNum(1);
+				GameManager.Instance.huntersKilledCount += 1;
 				Destroy(hunterGo);
 			}
 		}

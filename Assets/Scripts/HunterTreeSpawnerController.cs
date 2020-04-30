@@ -6,33 +6,41 @@ public class HunterTreeSpawnerController : MonoBehaviour
 {
     [SerializeField] private List<GameObject> treePrefabList;
     [SerializeField] private float treeSpawnTimerMax;
-    [SerializeField] private Vector3 leftTreeOffset;
-    [SerializeField] private Vector3 rightTreeOffset;
+    [SerializeField] private Vector3 leftSpawnPosition;
+    [SerializeField] private Vector3 rightSpawnPosition;
     [SerializeField] private float deltaZ;
     
-    private Vector2 _topRightViewPoint;
-    private Vector2 _bottomLeftViewPoint;
-    private Vector3 _leftSpawnPosition;
-    private Vector3 _rightSpawnPosition;
     private float _treeSpawnTimer;
+    private int _prevLeftIndex;
+    private int _prevRightIndex;
     
-    [SerializeField] private bool hunterSpawnerEnabled;
     [SerializeField] private GameObject hunterPrefab;
-    [SerializeField] private float hunterSpawnTimerMin;
-    [SerializeField] private float hunterSpawnTimerMax;
-    [SerializeField] private Vector3 leftHunterOffset;
-    [SerializeField] private Vector3 rightHunterOffset;
-    
+    public float hunterSpawnTimerMin;
+    public float hunterSpawnTimerMax;
+
     private float _hunterSpawnTimer;
     
     void Start()
     {
         _treeSpawnTimer = treeSpawnTimerMax;
         _hunterSpawnTimer = Random.Range(hunterSpawnTimerMin, hunterSpawnTimerMax);
-        _topRightViewPoint = Camera.main.ViewportToWorldPoint(Vector2.one);
-        _bottomLeftViewPoint = Camera.main.ViewportToWorldPoint(Vector2.zero);
-        _leftSpawnPosition = new Vector3(_bottomLeftViewPoint.x, _topRightViewPoint.y, 0f);
-        _rightSpawnPosition = new Vector3(_topRightViewPoint.x, _topRightViewPoint.y, 0f);
+
+        int i = 0;
+        while (i <= 25)
+        {
+            GameObject leftTree = SpawnTree(ref leftSpawnPosition, deltaZ, treePrefabList, ref _prevLeftIndex);
+            leftTree.transform.position = new Vector3(
+                leftSpawnPosition.x - i * 0.032f,
+                leftSpawnPosition.y - i * 0.8f,
+                0);
+            GameObject rightTree = SpawnTree(ref rightSpawnPosition, deltaZ, treePrefabList, ref _prevRightIndex);
+            rightTree.transform.position = new Vector3(
+                rightSpawnPosition.x + i * 0.032f,
+                rightSpawnPosition.y - i * 0.8f,
+                0);
+            i++;
+        }
+
     }
     
     void Update()
@@ -43,26 +51,43 @@ public class HunterTreeSpawnerController : MonoBehaviour
         GameObject rightTree = null;
         if (_treeSpawnTimer <= 0)
         {
-            leftTree = SpawnTree(ref _leftSpawnPosition, leftTreeOffset, deltaZ, treePrefabList);
-            rightTree = SpawnTree(ref _rightSpawnPosition, rightTreeOffset, deltaZ, treePrefabList);
+            leftTree = SpawnTree(ref leftSpawnPosition, deltaZ, treePrefabList, ref _prevLeftIndex);
+            rightTree = SpawnTree(ref rightSpawnPosition, deltaZ, treePrefabList, ref _prevRightIndex);
             _treeSpawnTimer = treeSpawnTimerMax;
         }
         
-        if (_hunterSpawnTimer <= 0.0f && hunterSpawnerEnabled)
+        if (_hunterSpawnTimer <= 0.0f && GameManager.Instance.hunterSpawnerEnabled)
         {
             if (SpawnHunter(Random.value > 0.5f, leftTree, rightTree))
                 _hunterSpawnTimer = Random.Range(hunterSpawnTimerMin, hunterSpawnTimerMax);
         }
+
+        if (GameManager.Instance.huntersUpdateTimer)
+        {
+            if (hunterSpawnTimerMin > 0.5f)
+                hunterSpawnTimerMin -= 0.5f;
+            if (hunterSpawnTimerMin < 0.5f)
+                hunterSpawnTimerMin = 0.5f;
+            if (hunterSpawnTimerMax > 1f)
+                hunterSpawnTimerMax -= 1f;
+            if (hunterSpawnTimerMax < 1f)
+                hunterSpawnTimerMax = 1f;
+            GameManager.Instance.huntersUpdateTimer = false;
+        }
     }
 
-    GameObject SpawnTree(ref Vector3 position, Vector3 offset, float depthFactor, List<GameObject> treePrefabList)
+    GameObject SpawnTree(ref Vector3 position, float depthFactor, List<GameObject> treePrefabList, ref int prevIndex)
     {
         if (treePrefabList.Count > 0)
         {
-            GameObject prefab = treePrefabList[Random.Range(0, treePrefabList.Count)];
-            GameObject treeGo = Instantiate(prefab, position + offset, Quaternion.identity, transform);
+            int index = Random.Range(0, treePrefabList.Count);
+            while (index == prevIndex)
+                index = Random.Range(0, treePrefabList.Count);
+            GameObject prefab = treePrefabList[index];
+            GameObject treeGo = Instantiate(prefab, position, Quaternion.identity, transform);
             treeGo.name = "TreeNoHunter";
             position.z += depthFactor;
+            prevIndex = index;
             return treeGo;
         }
         return null;

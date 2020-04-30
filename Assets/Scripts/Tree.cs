@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Tree : MonoBehaviour
 {
-    public float speed = 1f;
+    [SerializeField] private float xSpeed;
+    [SerializeField] private float ySpeed;
     private Camera _camera;
     private Vector3 _checkY;
 
@@ -12,10 +13,15 @@ public class Tree : MonoBehaviour
     {
         _camera = Camera.main;
         _checkY = _camera.ViewportToWorldPoint(new Vector3(0, 0, 0));
+        if (transform.position.x < 0)
+            xSpeed *= -1f;
     }
     void Update()
     {
-        transform.Translate(0, -speed * Time.deltaTime, 0);
+        transform.Translate(xSpeed * Time.deltaTime, ySpeed * Time.deltaTime, 0f);
+        // transform.Translate(
+            // transform.position.y < 0f ? xSpeed * Time.deltaTime : 0f,
+            // ySpeed * Time.deltaTime, 0f);
         if(transform.position.y < _checkY.y - 8f)
             Destroy(gameObject);
     }

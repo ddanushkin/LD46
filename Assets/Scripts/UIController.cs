@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +11,11 @@ public class UIController : MonoBehaviour
     [SerializeField] private Image shurikenFront;
     [SerializeField] private AudioClip shurikenIsReadyAudioClip;
     [SerializeField] private Button _button;
-
+    [SerializeField] private CanvasGroup mainGameUI;
+    [SerializeField] private CanvasGroup mainMenuUI;
+    
+    private CanvasGroupFader mainGameUIFader;
+    private CanvasGroupFader mainMenuUIFader;
     public static UIController Instance;
 
     void Awake() {
@@ -19,6 +24,14 @@ public class UIController : MonoBehaviour
 
     private int _shurikenNum;
     private int _hatNum = 0;
+
+    private void Start()
+    {
+        mainMenuUI.alpha = 1f;
+        mainMenuUIFader = mainMenuUI.GetComponent<CanvasGroupFader>();
+        mainGameUI.alpha = 0f;
+        mainGameUIFader = mainGameUI.GetComponent<CanvasGroupFader>();
+    }
 
     public void SetSettings(float max, float current)
     {
@@ -46,5 +59,25 @@ public class UIController : MonoBehaviour
     public void HideText()
     {
         _button.GetComponentInChildren<Text>().text = "";
+    }
+
+    public void ShowMainGameUI()
+    {
+        mainGameUIFader.FadeIn();
+    }
+
+    public void HideMainGameUI()
+    {
+        mainGameUIFader.FadeOut();
+    }
+ 
+    public void ShowMainMenuUI()
+    {
+        mainMenuUIFader.FadeIn();
+    }
+    
+    public void HideMainMenuUI()
+    {
+        mainMenuUIFader.FadeOut();
     }
 }

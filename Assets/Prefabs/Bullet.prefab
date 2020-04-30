@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -377082835
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 2e7d92ba9c7539441920792e45f0f9bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -124,6 +124,5 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 0
   lifeTime: 5
-  shakeDuration: 0
   onBulletDestroyClip: {fileID: 8300000, guid: d687713f5d5db5c4087a5e9260ed9fcf, type: 3}
   onBulletBalloonClip: {fileID: 8300000, guid: 2a87a6fdff405a04ebe28b9f967f6a6e, type: 3}

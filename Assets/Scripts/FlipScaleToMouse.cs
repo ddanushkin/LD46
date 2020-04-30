@@ -5,21 +5,15 @@ using UnityEngine;
 
 public class FlipScaleToMouse : MonoBehaviour
 {
-    private Camera _camera;
-    private readonly Quaternion _leftTurn = Quaternion.Euler(new Vector2(0f, 180f));
-    private readonly Quaternion _rightTurn = Quaternion.Euler(new Vector2(0f, 0f));
-
-    private void Start()
-    {
-        _camera = Camera.main;
-    }
-
+    private float _smoothTime = 0.3f;
     void Update()
     {
         Vector2 screenTouchPosition = Input.mousePosition;
         if (screenTouchPosition.x < Screen.width / 2f)
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, _leftTurn, 7f);
+            transform.eulerAngles = new Vector3(0, Mathf.SmoothDamp(transform.eulerAngles.y, 180f,
+                ref _smoothTime, 0.2f, 10000f, Time.unscaledDeltaTime), 0);
         else if (screenTouchPosition.x > Screen.width / 2f)
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, _rightTurn, 7f);
+            transform.eulerAngles = new Vector3(0, Mathf.SmoothDamp(transform.eulerAngles.y, 0f,
+                ref _smoothTime, 0.2f, 10000f, Time.unscaledDeltaTime), 0);
     }
 }

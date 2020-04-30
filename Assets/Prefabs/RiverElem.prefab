@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6744519007622567436}
-  - component: {fileID: 6236556858531532197}
   - component: {fileID: -2448047558168526382}
+  - component: {fileID: 3979400093605021936}
+  - component: {fileID: 6236556858531532197}
   m_Layer: 0
   m_Name: RiverElem
   m_TagString: Untagged
@@ -27,24 +28,11 @@ Transform:
   m_GameObject: {fileID: 4243948137370259329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.917126, y: 3.4337678, z: -79.74807}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6236556858531532197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4243948137370259329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74fe9b309fbd6f941acdfa55c6d788a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.8
 --- !u!212 &-2448047558168526382
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95,3 +83,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3979400093605021936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4243948137370259329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89736959838765b489b7c96896ec7b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationObject: {fileID: 11400000, guid: 0d40bf79201557a4d841eaab5831bb31, type: 2}
+  spriteRenderer: {fileID: 0}
+  autoStart: 1
+  loopAnimation: 1
+  framesPerSecond: 2
+--- !u!114 &6236556858531532197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4243948137370259329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74fe9b309fbd6f941acdfa55c6d788a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.8

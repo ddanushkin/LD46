@@ -17,7 +17,7 @@ public class GrassQuad : MonoBehaviour
     void Update()
     {
         _offset = _material.mainTextureOffset;
-        _offset.y += speed * Time.deltaTime;
+        _offset.y += speed / transform.localScale.y * Time.deltaTime;
         _material.mainTextureOffset = _offset;
     }
 }

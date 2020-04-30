@@ -17,6 +17,7 @@ public static class SoundManager
             audioSource.pitch = manualPitch;
         audioSource.PlayOneShot(clip, GameManager.Instance.volume);
         _audioSourcesList.Add(audioSource);
+        GameObject.Destroy(soundGameObject, clip.length);
         return (audioSource);
     }
 

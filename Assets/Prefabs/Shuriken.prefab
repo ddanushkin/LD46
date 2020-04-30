@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -377082835
   m_SortingLayer: 2
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 80667b81025eff847b12f59a5d426644, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -130,7 +130,10 @@ MonoBehaviour:
   lifeTime: 5
   sparkPrefab: {fileID: 7363197821211335053, guid: 9e1c1242fa2b6fe48b30aba4f6a9fe25,
     type: 3}
-  onCollisionAudio: {fileID: 8300000, guid: a23d9155778c2aa4088a8701018f709d, type: 3}
+  healPrefab: {fileID: 7363197821211335053, guid: e174428c5b95997478b6e3eca3a9b6ae,
+    type: 3}
+  onHealClip: {fileID: 8300000, guid: 4f9d852efcc772543aee6e480549eba5, type: 3}
+  onCollisionClip: {fileID: 8300000, guid: a23d9155778c2aa4088a8701018f709d, type: 3}
 --- !u!50 &6568063209596130919
 Rigidbody2D:
   serializedVersion: 4

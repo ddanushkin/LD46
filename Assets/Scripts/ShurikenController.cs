@@ -7,7 +7,9 @@ public class ShurikenController : MonoBehaviour
 	private Vector3 _direction;
 	[SerializeField] private float lifeTime;
 	[SerializeField] private GameObject sparkPrefab;
-	[SerializeField] private AudioClip onCollisionAudio;
+	[SerializeField] private GameObject healPrefab;
+	[SerializeField] private AudioClip onHealClip;
+	[SerializeField] private AudioClip onCollisionClip;
 	private void Start()
 	{
 		Camera camera = Camera.main;
@@ -27,10 +29,19 @@ public class ShurikenController : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
+		if (other.CompareTag("shuriken"))
+			return;
 		if (other.CompareTag("balloon"))
-			other.GetComponent<HoleSpawner>().SpawnNewHole();
-		Instantiate(sparkPrefab, transform.position, Quaternion.identity);
-		SoundManager.PlaySound(onCollisionAudio, true);
+		{
+			other.GetComponent<HoleSpawner>().SpawnPatch();
+			Instantiate(healPrefab, transform.position, Quaternion.identity);
+			SoundManager.PlaySound(onHealClip);
+		}
+		else
+		{
+			Instantiate(sparkPrefab, transform.position, Quaternion.identity);
+			SoundManager.PlaySound(onCollisionClip, true);
+		}
 		Destroy(gameObject);
 	}
 }
